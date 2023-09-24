@@ -88,14 +88,15 @@ function init() {
             ## Usage
             ${answers.usage}
 
-            ## License
-            This project is licensed under the ${answers.license} License.
             
             ## Contributing
             ${answers.contribution}
 
             ## Testing
             ${answers.tests}
+            
+            ## License
+            This project is licensed under the ${answers.license} License.
             
             ## Contact
             GitHub: [${answers.githubUsername}](https://github.com/${answers.githubUsername})
