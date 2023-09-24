@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
-const inquirer = require('inquirer');
 const fs = require('fs');
+const inquirer = require('inquirer');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -45,6 +45,11 @@ const questions = [
         name: 'email',
         message: 'Enter your email address:',
     },
+    {
+        type: 'input',
+        name: 'GitHub username',
+        message: 'Enter your github username:',
+    },
 ];
 
 // TODO: Create a function to write README file
@@ -78,15 +83,21 @@ function init() {
             - [Questions](#questions)
             
             ## Installation
-            ${answers.usage}
+            ${answers.installation}
             
+            ## Usage
+            ${answers.usage}
+
             ## License
             This project is licensed under the ${answers.license} License.
             
             ## Contributing
+            ${answers.contribution}
+
+            ## Testing
             ${answers.tests}
             
-            ## Questions
+            ## Contact
             GitHub: [${answers.githubUsername}](https://github.com/${answers.githubUsername})
             Email: ${answers.email}
             `;
